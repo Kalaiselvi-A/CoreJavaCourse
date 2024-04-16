@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-class Point
+class Point implements Comparable<Point>
 {
 	float x,y;
 	Point()
@@ -18,9 +18,16 @@ class Point
 		this.x=x;
 		this.y=y;
 	}
+	
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
+	}
+	@Override
+	public int compareTo(Point o) {
+		if(this.x == o.x)
+			return Float.compare(this.y, o.y);
+		return Float.compare(this.x, o.x);
 	}
 	
 }
@@ -58,17 +65,17 @@ public class ListDemo {
 
 		// Adding Person objects into ArrayList
 		List<Person> personList = new ArrayList<Person>();
-		Person person = new Person("Abhijit", "Mumbai");
-		personList.add(person);
+		Person person1 = new Person("Abhijit", "Mumbai");
+		personList.add(person1);
 
-		person = new Person("Milind", "Pune");
-		personList.add(person);
+		person1 = new Person("Milind", "Pune");
+		personList.add(person1);
 
-		person = new Person("Saurav", "Bangalore");
-		personList.add(person);
+		person1 = new Person("Saurav", "Bangalore");
+		personList.add(person1);
 
-		person = new Person("Madhur", "Delhi");
-		personList.add(person);
+		person1 = new Person("Madhur", "Delhi");
+		personList.add(person1);
 
 		System.out.println("Person list is as follows\n" + personList);
 
