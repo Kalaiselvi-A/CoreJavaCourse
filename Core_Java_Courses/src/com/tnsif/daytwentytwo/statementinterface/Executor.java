@@ -1,9 +1,6 @@
 //Program to demonstrate Statement Interface
 package com.tnsif.daytwentytwo.statementinterface;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 //import java.sql.*;
 

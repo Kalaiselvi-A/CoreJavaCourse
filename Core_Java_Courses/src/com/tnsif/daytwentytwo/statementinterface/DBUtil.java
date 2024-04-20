@@ -9,8 +9,8 @@ public class DBUtil {
 	private static Connection cn;
 	private static final String DB_DRIVER_CLASS="com.mysql.cj.jdbc.Driver";
 	private static final String DB_USERNAME="root";
-	private static final String DB_PASSWORD="alpana@123";
-	private static final String DB_URL ="jdbc:mysql://localhost:3306/test";
+	private static final String DB_PASSWORD="Kvlv!@204";
+	private static final String DB_URL ="jdbc:mysql://localhost:3306/db_tns";
 	public static Connection getConnetion() {
 		try {
 			Class.forName(DB_DRIVER_CLASS);// to load database driver
@@ -22,7 +22,7 @@ public class DBUtil {
 
 		} catch (ClassNotFoundException e) {
 			System.out.println("Error....." + e.getMessage());
-			// e.printStackTrace();
+			//e.printStackTrace();
 		} catch (SQLException e) {
 			System.out.println("Error....." + e.getMessage());
 		}
