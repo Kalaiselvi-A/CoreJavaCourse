@@ -14,7 +14,7 @@ public class Citizen {
 	}
 
 	public Citizen(String name, String aadharNo, String address, long phno) {
-
+		
 		this.name = name;
 		this.aadharNo = aadharNo;
 		this.address = address;
@@ -54,6 +54,7 @@ public class Citizen {
 	}
 
 	@Override
+	// toString() - string representation of an object
 	public String toString() {
 		return "Citizen [name=" + name + ", aadharNo=" + aadharNo + ", address=" + address + ", phno=" + phno + "]";
 	}

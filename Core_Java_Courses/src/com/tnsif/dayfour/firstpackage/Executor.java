@@ -1,4 +1,4 @@
-//Program to demonstrate accessing classes and methods
+//Program to demonstrate accessing classes and methods of same package
 package com.tnsif.dayfour.firstpackage;
 
 
